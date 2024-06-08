@@ -33,11 +33,10 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 
 ## Demo
 
-[demo]
-`html
-./assets/v1.0.mp4
-`
 
+`markdown
+![Alt text]("./assets/v1.0.mp4")
+`
 
 ## Data Examples
 

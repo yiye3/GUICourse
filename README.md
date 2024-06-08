@@ -157,6 +157,7 @@ python eval_task_act.py \
 ## Contact
 
 [Wentong Chen](mailto:cwt_0139@ruc.edu.cn), Renmin University of China
+
 [Junbo Cui](mailto:cuijb2000@gmail.com), [Jinyi Hu](mailto:hu-jy21@mails.tsinghua.edu.cn), Tsinghua University
 
 

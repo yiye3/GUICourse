@@ -35,7 +35,10 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 ![Alt text](./assets/GUIAct-example.svg)
 
 
-![Alt text](./assets/v1.0.mp4)
+![Alt text](./assets/v1.0.gif)
+
+![Alt text](./assets/v2.0.gif)
+
 
 
 ## Data Examples

@@ -39,7 +39,8 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 The data of [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv), [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct), and [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat) are hosted on Huggingface.
 
 ### Data Load
-*Data Format*
+*Data Format.* 
+We use `JSON` and `parquet` format to save our datasets.
 ```
               elements
 uid_episode_10270193012375700035_step_00  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 39, 'width':...
@@ -63,7 +64,7 @@ python data_load.py \
 - `dataset`: the name of the dataset, such as `guienv`.
 Notably, you should select a suitable version of `pyarrow` (e.g., pyarrow==13.0.0) for reading large parquet files.
 
-*Visualization*
+*Visualization.*
 You can visualize our data using the functions `actions_visual` and `elements_visual`.
 
 ## Evaluation
@@ -78,7 +79,7 @@ python evaluation.py \
 - `file_name`: the name of your prediction file (without the suffix `.json`).
 - `task`: the name of tasks, including `guienv`, `guiact_web_single`, `guiact_web_multi`, and `guiact_smartphone`.
 
-*Examples* 
+*Examples.* 
 We provide some results for quick evaluation in the `./results` dir.
 
 ## Performance

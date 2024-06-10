@@ -13,12 +13,12 @@ Release process:
     - [x] GUIAct (smartphone)
   - [x] GUIChat
 - [x] Code
-  - [x] Inference
+  - [ ] Inference
   - [x] Evaluation
 - [ ] Models
 
 Updates:
-- 2024/6/7: Release the datasets for SFT and evaluation.
+- 2024/6/7: Release the datasets, loading code, and evaluation code.
 
 
 ## Data Summary
@@ -38,7 +38,7 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 ### Download
 The data of [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv), [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct), and [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat) are hosted on Huggingface.
 
-### Read
+### Data Load
 *Data Format*
 ```
               elements
@@ -60,7 +60,7 @@ python data_load.py \
 ```
 - `data_path`: the path of your JSON data, such as `ocr_grounding_test_data.json`.
 - `img_path`:  the path of used images, such as `ocr_grounding_test_images.parquet`.
-- `dataset`: the name of dataset, such as `guienv`.
+- `dataset`: the name of the dataset, such as `guienv`.
 Notably, you should select a suitable version of `pyarrow` (e.g., pyarrow==13.0.0) for reading large parquet files.
 
 *Visualization*
@@ -78,6 +78,8 @@ python evaluation.py \
 - `file_name`: the name of your prediction file (without the suffix `.json`).
 - `task`: the name of tasks, including `guienv`, `guiact_web_single`, `guiact_web_multi`, and `guiact_smartphone`.
 
+*Examples* 
+We provide some results for quick evaluation in the `./results` dir.
 
 ## Performance
 

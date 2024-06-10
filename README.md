@@ -28,27 +28,15 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 (1) GUIEnv, a large-scale dataset for improving VLMs' OCR and grounding abilities, including 10M website page-annotation pairs as pre-training data and 0.7M region-text QA pairs as SFT data; 
 
 (2) GUIAct, a GUI navigation dataset in website and Android scenarios for enhancing VLMs' knowledge of GUI systems, including 67k single-step and 15k multi-step action instructions. 
+![example1](./assets/GUIAct-example.svg)
 
 (3) GUIChat, a conversational dataset for improving the interaction skills of GUI agents, including 44k single-turn QA pairs and 6k multi-turn dialogues with text-rich images and bounding boxes.
-
-## Data Examples
-
-### GUIEnv
-
-### GUIAct
-
-### GUIChat
 
 
 ## Dataset Access
 
 ### Download
-
-The training set and testing set of GUIEnv-local is hosted on [Huggingface](https://huggingface.co/datasets/yiye2023/GUIEnv)
-
-The training set and testing set of GUIAct is hosted on [Huggingface](https://huggingface.co/datasets/yiye2023/GUIAct)
-
-The training set of GUIChat is hosted on [Huggingface](https://huggingface.co/datasets/yiye2023/GUIChat)
+The data of [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv), [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct), and [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat) are hosted on Huggingface.
 
 ### Read
 *Data Format*
@@ -65,16 +53,18 @@ uid_episode_12220552989760792145_step_02  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBg
 You can read our  data by:
 ```
 python data_load.py \
-  --
+  --data_path "./data/xxx_data.json"
+  --img_path "./data/xxx_images.parquet"
+  --dataset "guixxx"
 
 ```
+- `data_path`: the path of your JSON data, such as `ocr_grounding_test_data.json`.
+- `img_path`:  the path of used images, such as `ocr_grounding_test_images.parquet`.
+- `dataset`: the name of dataset, such as `guienv`.
 Notably, you should select a suitable version of `pyarrow` (e.g., pyarrow==13.0.0) for reading large parquet files.
 
-### Visualization
-
-You can visualize our data by:
-"""
-"""
+*Visualization*
+You can visualize our data using the functions `actions_visual` and `elements_visual`.
 
 ## Evaluation
 
@@ -83,34 +73,13 @@ You can visualize our data by:
 ```
 cd ./evaluation
 
-python eval_ocr_grounding.py \
-  --pred_data=""
-  --test_data="" \
-  --img_data="" \
-  --output_path="" \
-  --log_error_samples=True \
-  --visualize_error_samples=True
+python evaluation.py \
+  --file_name="your_test_file_name" \
+  --task="xxx" \
 ```
+- `file_name`: the name of your prediction file (without the suffix `.json`).
+- `task`: the name of tasks, including `guienv`, `guiact_web_single`, `guiact_web_multi`, and `guiact_smartphone`.
 
-- `pred_data`: the path of your prediction file.
-- `test_data`: the path of test_data_file.
-- `img_data`: the path of used images.
-- `output_path`: the path to output testing results
-- `log_error_samples`: setting "True" for get error logs.
-- `visualize_error_samples`: visualize the error samples
-
-**GUI Navigation Tasks**: 
-```
-cd ./evaluation
-
-python eval_task_act.py \
-  --pred_data=""
-  --test_data="" \
-  --img_data="" \
-  --output_path="" \
-  --log_error_samples=True \
-  --visualize_error_samples=True
-```
 
 ## Performance
 

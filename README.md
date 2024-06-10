@@ -32,11 +32,11 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 (3) GUIChat, a conversational dataset for improving the interaction skills of GUI agents, including 44k single-turn QA pairs and 6k multi-turn dialogues with text-rich images and bounding boxes.
 
 ## Demo
-[Alt text]("./assets/GUIAct-example.svg")
+![Alt text]("./assets/GUIAct-example.svg")
 
-`markdown
+
 ![Alt text]("./assets/v1.0.mp4")
-`
+
 
 ## Data Examples
 

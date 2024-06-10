@@ -68,8 +68,6 @@ You can visualize our data using the functions `actions_visual` and `elements_vi
 
 ## Evaluation
 
-**ORC and Grounding Tasks**: 
-
 ```
 cd ./evaluation
 

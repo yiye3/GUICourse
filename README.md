@@ -27,17 +27,10 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 
 (1) GUIEnv, a large-scale dataset for improving VLMs' OCR and grounding abilities, including 10M website page-annotation pairs as pre-training data and 0.7M region-text QA pairs as SFT data; 
 
-(2) GUIAct, a GUI navigation dataset in website and android scenarios for enhancing VLMs' knowledge of GUI systems, including 67k single-step and 15k multi-step action instructions. 
+(2) GUIAct, a GUI navigation dataset in website and Android scenarios for enhancing VLMs' knowledge of GUI systems, including 67k single-step and 15k multi-step action instructions. 
 
 (3) GUIChat, a conversational dataset for improving the interaction skills of GUI agents, including 44k single-turn QA pairs and 6k multi-turn dialogues with text-rich images and bounding boxes.
 
-## Demo
-<img src="./assets/v1.0.gif" loop="loop">
-
-
-![Alt text](./assets/v1.0.gif)
-
-![Alt text](./assets/v2.0.gif)
 
 
 
@@ -55,6 +48,10 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 
 ### GUIChat
 
+## Demo
+![Alt text](./assets/v1.0.gif)
+
+![Alt text](./assets/v2.0.gif)
 
 
 ## Dataset Access

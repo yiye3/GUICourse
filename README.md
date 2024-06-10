@@ -49,7 +49,7 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 ### GUIChat
 
 ## Demo
-![Alt text](./assets/v1.0.gif)
+![Alt text](./assets/v1.2.gif)
 
 ![Alt text](./assets/v2.0.gif)
 

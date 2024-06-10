@@ -31,27 +31,13 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 
 (3) GUIChat, a conversational dataset for improving the interaction skills of GUI agents, including 44k single-turn QA pairs and 6k multi-turn dialogues with text-rich images and bounding boxes.
 
-
-
-
 ## Data Examples
 
-### GUIEnv-global
+### GUIEnv
 
-### GUIEnv-local
-
-### GUIAct-web-single
-
-### GUIAct-web-multi
-
-### GUIAct-smartphone
+### GUIAct
 
 ### GUIChat
-
-## Demo
-![Alt text](./assets/v1.2.gif)
-
-![Alt text](./assets/v2.0.gif)
 
 
 ## Dataset Access
@@ -71,46 +57,15 @@ The training set of GUIChat is hosted on [Huggingface](https://huggingface.co/da
 uid_episode_10270193012375700035_step_00  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 39, 'width':...
 uid_episode_10270193012375700035_step_01  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 42, 'width':...
 uid_episode_10270193012375700035_step_02  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 44, 'width':...
-uid_episode_10270193012375700035_step_03  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 32, 'width':...
-uid_episode_10270193012375700035_step_04  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 45, 'width':...
 ...                                                                                     ...
                    ...
 uid_episode_12220552989760792145_step_01  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 46, 'width':...
 uid_episode_12220552989760792145_step_02  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 56, 'width':...
-uid_episode_12220552989760792145_step_03  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 56, 'width':...
-uid_episode_12220552989760792145_step_04  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 54, 'width':...
-uid_episode_12220552989760792145_step_05  /9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw...  [{'id': 0, 'position': {'height': 48, 'width':...
 ```
 You can read our  data by:
 ```
-import json
-import pandas as pd
-from io import BytesIO
-import base64
-from PIL import Image
-
-def read_json(path):
-    with open(path, 'r', encoding='utf8') as f:
-        data = json.loads(f.read())
-    return data
-
-def read_parquet(path):
-    return pd.read_parquet(path, columns=None)
-
-def decode_base64_to_image(base64_string):
-    return Image.open(BytesIO(base64.b64decode(base64_string))).convert("RGB")
-
-def read_image_from_qarquet(cur_df, image_id):
-    cur_image_str = cur_df.loc[image_id]["base64"]
-    return decode_base64_to_image(cur_image_str)
-
-instructions = read_json("xxx.json")
-cur_df = read_parquet("xxx.parquet")
-
-for ins in instructions:
-    image_id =ins["image_id"]
-    image = read_image_from_qarquet(cur_df, image_id)
-    break
+python data_load.py \
+  --
 
 ```
 Notably, you should select a suitable version of `pyarrow` (e.g., pyarrow==13.0.0) for reading large parquet files.
@@ -156,6 +111,20 @@ python eval_task_act.py \
   --log_error_samples=True \
   --visualize_error_samples=True
 ```
+
+## Performance
+
+### Cases
+![case1](./assets/act1.svg)
+
+![case2](./assets/act2.svg)
+
+![case3](./assets/act3.svg)
+
+### Demo: GUIAgent in Andriod Simulated Environment
+![Alt text](./assets/v1.2.gif)
+
+![Alt text](./assets/v2.2.gif)
 
 ## Contact
 

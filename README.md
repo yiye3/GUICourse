@@ -60,9 +60,8 @@ python data_load.py \
 
 ```
 - `data_path`: the path of your JSON data, such as `ocr_grounding_test_data.json`.
-- `img_path`:  the path of used images, such as `ocr_grounding_test_images.parquet`.
+- `img_path`:  the path of used images, such as `ocr_grounding_test_images.parquet`. Notably, you should select a suitable version of `pyarrow` (e.g., pyarrow==13.0.0) for reading large parquet files.
 - `dataset`: the name of the dataset, such as `guienv`.
-Notably, you should select a suitable version of `pyarrow` (e.g., pyarrow==13.0.0) for reading large parquet files.
 
 *Visualization.*
 You can visualize our data using the functions `actions_visual` and `elements_visual`.

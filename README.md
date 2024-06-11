@@ -93,6 +93,8 @@ There are some visual cases of our GUI agents.
 
 ![case3](./assets/act3.svg)
 
+![case3](./assets/chat1.svg)
+
 ### Demo: GUIAgent in Andriod Simulated Environment
 To evaluate the robustness of our GUI agents, we use a simulated smartphone environment by Android Studio to do interactive testing.
 ![Alt text](./assets/v1.2.gif)

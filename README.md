@@ -6,15 +6,15 @@ Release process:
 - [ ] Datasets
   - [ ] GUIEnv
     - [ ] GUIEnv-global (pre-training data)
-    - ✅ GUIEnv-local (SFT data)
-  - ✅ GUIAct
-    - ✅ GUIAct (web-single)
-    - ✅ GUIAct (web-multi)
-    - ✅ GUIAct (smartphone)
-  - ✅ GUIChat
+    - [x] GUIEnv-local (SFT data)
+  - [x] GUIAct
+    - [x] GUIAct (web-single)
+    - [x] GUIAct (web-multi)
+    - [x] GUIAct (smartphone)
+  - [x] GUIChat
 - [ ] Code
   - [ ] Inference
-  - ✅ Evaluation
+  - [x] Evaluation
 - [ ] Models
 
 Updates:
@@ -122,9 +122,9 @@ If you find this dataset useful, please consider citing our paper:
 
 ```
 @misc{,
-  title={},
-  author={},
-  year={},
+  title={GUICourse: From General Vision Langauge Models to Versatile GUI Agents},
+  author={Wentong Chen and Junbo Cui and Jinyi Hu and Yujia Qin and Junjie Fang and Yue Zhao and Chongyi Wang and Jun Liu and Guirong Chen and Yupeng Huo and Yuan Yao and Yankai Lin and Zhiyuan Liu and Maosong Sun},
+  year={2024},
   eprint={},
   archivePrefix={},
   primaryClass={}

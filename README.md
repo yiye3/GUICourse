@@ -1,20 +1,20 @@
 # GUICourse: From General Vision Langauge Models to Versatile GUI Agents 
 
 Datasets, codes, and models for the paper "[GUICourse: From General Vision Langauge Models to Versatile GUI Agents]()".
-<span style="color:blue">这是**蓝色**的文字</span>
+
 Release process:
 - [ ] Datasets
   - [ ] GUIEnv
     - [ ] GUIEnv-global (pre-training data)
-    - [x] GUIEnv-local (SFT data)
-  - [x] GUIAct
-    - [x] GUIAct (web-single)
-    - [x] GUIAct (web-multi)
-    - [x] GUIAct (smartphone)
-  - [x] GUIChat
-- [x] Code
+    - ✅ GUIEnv-local (SFT data)
+  - ✅ GUIAct
+    - ✅ GUIAct (web-single)
+    - ✅ GUIAct (web-multi)
+    - ✅ GUIAct (smartphone)
+  - ✅ GUIChat
+- [ ] Code
   - [ ] Inference
-  - [x] Evaluation
+  - ✅ Evaluation
 - [ ] Models
 
 Updates:

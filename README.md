@@ -7,7 +7,7 @@ Release process:
   - [ ] GUIEnv
     - [ ] GUIEnv-global (pre-training data)
     - [x] GUIEnv-local (SFT data)
-  - [x] GUIAct
+  - [x] `#ffffff` GUIAct
     - [x] GUIAct (web-single)
     - [x] GUIAct (web-multi)
     - [x] GUIAct (smartphone)

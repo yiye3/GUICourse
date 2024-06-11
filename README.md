@@ -86,6 +86,7 @@ We provide some results for quick evaluation in the `./results` dir.
 ## Performance
 
 ### Cases
+There are some visual cases of our GUI agents.  
 ![case1](./assets/act1.svg)
 
 ![case2](./assets/act2.svg)
@@ -93,6 +94,7 @@ We provide some results for quick evaluation in the `./results` dir.
 ![case3](./assets/act3.svg)
 
 ### Demo: GUIAgent in Andriod Simulated Environment
+To evaluate the robustness of our GUI agents, we use a simulated smartphone environment by Android Studio to do interactive testing.
 ![Alt text](./assets/v1.2.gif)
 
 ![Alt text](./assets/v2.2.gif)

@@ -1,7 +1,7 @@
 # GUICourse: From General Vision Langauge Models to Versatile GUI Agents 
 
 Datasets, codes, and models for the paper "[GUICourse: From General Vision Langauge Models to Versatile GUI Agents]()".
-
+The background color is `#ffffff` for light mode and `#000000` for dark mode.
 Release process:
 - [ ] Datasets
   - [ ] GUIEnv

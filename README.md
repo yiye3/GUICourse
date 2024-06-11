@@ -40,7 +40,7 @@ GUICourse is a group of complete datasets to train visual-based GUI agents from 
 ### Download
 The data of [GUIEnv-local](https://huggingface.co/datasets/yiye2023/GUIEnv), [GUIAct](https://huggingface.co/datasets/yiye2023/GUIAct), and [GUIChat](https://huggingface.co/datasets/yiye2023/GUIChat) are hosted on Huggingface.
 
-### Data Load
+### Read
 *Data Format.* 
 We use `JSON` and `parquet` format to save our datasets.
 ```

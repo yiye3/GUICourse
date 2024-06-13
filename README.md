@@ -112,11 +112,11 @@ To evaluate the robustness of our GUI agents, we use a simulated smartphone envi
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />The datasets are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
-Code under this repo is licensed under a MIT License.
+The code under this repo is licensed under an MIT License.
 
 ## Disclaimer
 
-These datasets were collected and released solely for research purposes, with the goal of training versatile GUI agents. The authors are strongly against any potential harmful use of the data or technology to any party. 
+These datasets were collected and released solely for research purposes, with the goal of training versatile GUI agents. The authors are strongly against any potentially harmful use of the data or technology by any party. 
 
 ## Citation Information
 

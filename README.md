@@ -1,6 +1,6 @@
 # 📱🖥️ GUICourse: From General Vision Langauge Models to Versatile GUI Agents 
 
-Datasets, codes, and models for the paper "[GUICourse: From General Vision Langauge Models to Versatile GUI Agents]()".
+Datasets, codes, and models for the paper "[GUICourse: From General Vision Langauge Models to Versatile GUI Agents](https://arxiv.org/abs/2406.11317)".
 
 Release process:
 - [ ] Datasets
@@ -127,8 +127,6 @@ If you find this dataset useful, please consider citing our paper:
   title={GUICourse: From General Vision Language Models to Versatile GUI Agents},
   author={Wentong Chen and Junbo Cui and Jinyi Hu and Yujia Qin and Junjie Fang and Yue Zhao and Chongyi Wang and Jun Liu and Guirong Chen and Yupeng Huo and Yuan Yao and Yankai Lin and Zhiyuan Liu and Maosong Sun},
   year={2024},
-  eprint={},
-  archivePrefix={},
-  primaryClass={}
+  journal={arXiv preprint arXiv:2406.11317},
 }
 ```

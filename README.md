@@ -87,7 +87,7 @@ python convert_to_sft_instructions.py
 ```
 
 *Step 3.* Merge different data.
-You should change the code depending on your models' input formats and the data you want to use. We use the `Qwen-VL`'s format as an example.
+You should change the code depending on your models' input formats and the data you want to use. We use the `Qwen-VL`'s  SFT data format as an example.
 ```
 python merge_data.py
 ```

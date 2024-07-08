@@ -13,6 +13,7 @@ Release process:
     - [x] GUIAct (smartphone)
   - [x] GUIChat
 - [ ] Code
+  - [ ] Data Preprocess
   - [ ] Inference
   - [x] Evaluation
 - [ ] Models
@@ -67,6 +68,40 @@ python data_load.py \
 
 *Visualization.*
 You can visualize our data using the functions `actions_visual` and `elements_visual`.
+
+### Preprocess
+You can convert our data to the common format of SFT data in three steps: 
+
+*Step 1.* Reading images from 'parquet' files, convert them to 'png' format.
+Download our data with the suffix `parquet`, and put them in a dir `data`. 
+```
+python convert_parquet_to_png.py
+```
+
+*Step 2.* Convert 'json' files to QA-pairs.
+```
+python convert_to_sft_instructions.py
+```
+
+*Step 3.* Merge different data.
+You should change the code depending on your models' input formats and the data you want to use. We use the `Qwen-VL`'s format as an example.
+```
+python merge_data.py
+```
+
+*Default settings:*
+training data using (merged):
+    + ocr_grounding_train_stage2_data
+    + smartphone_train_data
+    + web-multi_train_data
+    + web-single_train_data
+    + guichat_data
+
+testing data using:
+    1. ocr_grounding_test_data
+    2. smartphone_test_data
+    3. web-multi_test_data
+    4. web-single_test_data 
 
 ## Evaluation
 

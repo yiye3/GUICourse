@@ -70,6 +70,9 @@ python data_load.py \
 You can visualize our data using the functions `actions_visual` and `elements_visual`.
 
 ### Preprocess
+```
+cd data_preprocess
+```
 You can convert our data to the common format of SFT data in three steps: 
 
 *Step 1.* Reading images from 'parquet' files, convert them to 'png' format.

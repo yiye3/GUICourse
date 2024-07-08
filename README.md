@@ -14,12 +14,13 @@ Release process:
   - [x] GUIChat
 - [ ] Code
   - [x] Data Preprocess
-  - [ ] Inference
+  - [x] Supervised Finetune
+  - [x] Inference 
   - [x] Evaluation
 - [ ] Models
 
 Updates:
-- 2024/7/8: Release the code that converts our data to SFT instructions.
+- 2024/7/8: Release the code that converts our data to SFT instructions. Release the code for Qwen-VL's finetune and inference [Here](./Qwen-SFT&Infer).
 - 2024/6/7: Release the datasets, loading code, and evaluation code.
 
 

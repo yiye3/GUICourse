@@ -19,6 +19,7 @@ Release process:
 - [ ] Models
 
 Updates:
+- 2024/7/8: Release the code that converts our data to SFT instructions.
 - 2024/6/7: Release the datasets, loading code, and evaluation code.
 
 

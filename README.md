@@ -17,9 +17,10 @@ Release process:
   - [x] Supervised Finetune
   - [x] Inference 
   - [x] Evaluation
-- [ ] Models
+- [x] Models
 
 Updates:
+- 2024/7/9: Release the model weight for MiniCPM-GUI and its inference code. You can find it [here](https://huggingface.co/RhapsodyAI/minicpm-guidance).
 - 2024/7/8: Release the code that converts our data to SFT instructions. Release the code for Qwen-VL's finetune and inference [Here](./Qwen-SFT&Infer).
 - 2024/6/7: Release the datasets, loading code, and evaluation code.
 

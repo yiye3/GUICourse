@@ -58,6 +58,10 @@ def write_images_version1(images, base_path):
 
 def write_images_version2(images, base_path):
     image2path = {}
+    chunk_id = 0
+    os.mkdir(f"{base_path}/chunk_{chunk_id}")
+
+    i = 0
     for k, v in images.items():
         image = Image.open(BytesIO(v)).convert("RGB")
         image_path = f"{base_path}/chunk_{chunk_id}/{k}.png"
